@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Python environments
+venv/
+.venv/
+env/
+
+# Backups and temporary files
+backup/
+*.log
+.cache/
+window_config.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
