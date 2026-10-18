@@ -23,32 +23,26 @@ Built with Python and GTK3, the project focuses on a simple, unobtrusive experie
 - [LRCLIB](https://lrclib.net/)
 
 Developed primarily on Arch Linux with Hyprland, with additional development on Ubuntu and GNOME.
-
 ## Installation
 
 ### Arch Linux
 
-Install the required system packages:
-
-```bash
-sudo pacman -S --needed python python-gobject gtk3 playerctl git
-```
-
 Clone the repository:
 
-```bash
-git clone https://github.com/nebularch/floating-lyrics.git
-cd floating-lyrics
-```
+    git clone https://github.com/nebularch/floating-lyrics.git
+    cd floating-lyrics
 
-Review `start.sh` and adjust any paths if necessary. Then launch the application:
+Run the setup script to install dependencies and prepare the Python environment:
 
-```bash
-./start.sh
-```
+    ./setup.sh
 
-A compatible media player must expose its playback information through MPRIS for automatic track detection and synchronization.
+Launch FloatingLyrics:
 
+    ./start.sh
+
+The setup script uses `sudo` to install system packages through Pacman.
+
+**Requirements:** Arch Linux, GTK3, Python, `playerctl`, and a compatible MPRIS media player.
 ## Development status
 
 FloatingLyrics is a work in progress. Current development focuses on improving window management under Wayland, refining track detection, and expanding support for songs without synchronized lyrics.
